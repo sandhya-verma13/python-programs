@@ -18,16 +18,21 @@ print(odd)
 print(od_sq)
 
 #2.QUESTION:
-n=[3,5,7,9,6,4]
+n=[]
+e=int(input("Enter how many elements you want : "))
+print("Enter",e,"numbers")
+for i in range(e):
+    num=int(input())
+    n.append(num)
 l=0
 s=n[0]
-for i in range(len(n)):
-  if (l<n[i]):
-    l=n[i]
-  elif (s>n[i]):
-    s=n[i]
-print("Largest = ",l)
-print("Smallest = ",s)
+for num in n:
+    if num > l:
+        l= num
+    elif num<s:
+        s=num
+print("Largest number = ",l)
+print("Smallest number = ",s)
 
 #3.QUESTION:
 
